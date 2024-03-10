@@ -1,0 +1,63 @@
+uuid: 068782c1-6e67-4e22-b253-eb98277e18c1
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.nested_paragraph.field_paragraphs_demo
+    - paragraphs.paragraphs_type.nested_paragraph
+  module:
+    - entity_reference_revisions
+    - field_layout
+    - layout_builder
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          02c6446f-8e9d-4092-ba07-9859dc5a2cef:
+            uuid: 02c6446f-8e9d-4092-ba07-9859dc5a2cef
+            region: content
+            configuration:
+              id: 'field_block:paragraph:nested_paragraph:field_paragraphs_demo'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: hidden
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+_core:
+  default_config_hash: VwQ43rfoFoQwqTEQIx9eK41wlMFzh5c7fKze-Rk06SM
+id: paragraph.nested_paragraph.default
+targetEntityType: paragraph
+bundle: nested_paragraph
+mode: default
+content:
+  field_paragraphs_demo:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  search_api_excerpt: true
+  uid: true

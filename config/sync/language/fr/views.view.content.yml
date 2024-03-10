@@ -1,0 +1,33 @@
+display:
+  default:
+    display_title: 'Par défaut'
+    display_options:
+      fields:
+        title:
+          label: Titre
+        type:
+          separator: ', '
+        status:
+          label: État
+        operations:
+          label: Actions
+      pager:
+        options:
+          tags:
+            next: 'Suivant ›'
+            previous: '‹ Précédent'
+      exposed_form:
+        options:
+          reset_button_label: Réinitialiser
+          exposed_sorts_label: 'Trier par'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      filters:
+        title:
+          expose:
+            label: Titre
+        status:
+          expose:
+            label: État
+  page_1:
+    display_title: Page

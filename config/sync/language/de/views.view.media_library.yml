@@ -1,0 +1,59 @@
+display:
+  default:
+    display_title: Standard
+    display_options:
+      title: Medien
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Elemente pro Seite'
+            items_per_page_options_all_label: '- Alle -'
+            offset_label: Versatz
+      exposed_form:
+        options:
+          reset_button_label: Zurücksetzen
+          exposed_sorts_label: 'Sortieren nach'
+          sort_asc_label: Aufsteigend
+          sort_desc_label: Absteigend
+      filters:
+        name:
+          expose:
+            label: Name
+        bundle:
+          expose:
+            label: Medientyp
+          group_info:
+            label: Medientyp
+  page:
+    display_title: Seite
+    display_options:
+      fields:
+        name:
+          separator: ', '
+        edit_media:
+          text: Bearbeiten
+        delete_media:
+          text: Löschen
+  widget:
+    display_options:
+      filters:
+        name:
+          expose:
+            label: Name
+      header:
+        display_link_grid:
+          label: Raster
+  widget_table:
+    display_options:
+      fields:
+        thumbnail__target_id:
+          label: Miniaturbild
+        name:
+          label: Name
+      filters:
+        name:
+          expose:
+            label: Name
+      header:
+        display_link_grid:
+          label: Raster

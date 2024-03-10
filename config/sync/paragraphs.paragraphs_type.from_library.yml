@@ -1,0 +1,12 @@
+uuid: 04eca540-35dc-4eb6-8e46-16649706e2de
+langcode: en-gb
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: OJUwL6xTTiHbXZy10swc5Fckkr7qhSm4b0nK3326LO8
+id: from_library
+label: 'From library'
+icon_uuid: null
+icon_default: null
+description: null
+behavior_plugins: {  }

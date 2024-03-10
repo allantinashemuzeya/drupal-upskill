@@ -1,0 +1,18 @@
+uuid: 30b3ab9a-fdd8-4b00-b35d-37b24d75299d
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - type_tray
+third_party_settings:
+  type_tray:
+    existing_nodes_link_text: 'View existing <em class="placeholder">Paragraphed article</em> content'
+_core:
+  default_config_hash: _XrDasOCVGU-L6Hy2UcCXmG5hefWE9dTdFMmk86uJ88
+name: 'Paragraphed article'
+type: paragraphed_content_demo
+description: 'Article with Paragraphs.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

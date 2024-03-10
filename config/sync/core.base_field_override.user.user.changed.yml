@@ -1,0 +1,18 @@
+uuid: 0e0dffa5-60a2-482b-8f79-57ab8ef9513e
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - user
+id: user.user.changed
+field_name: changed
+entity_type: user
+bundle: user
+label: Changed
+description: 'The time that the user was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

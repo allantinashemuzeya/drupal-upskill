@@ -1,0 +1,91 @@
+uuid: 278ac77c-f5bf-4fa4-9f0b-3ce98c149881
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_image.field_image_demo
+    - field.field.paragraph.text_image.field_text_demo
+    - paragraphs.paragraphs_type.text_image
+  module:
+    - field_layout
+    - image
+    - layout_builder
+    - layout_discovery
+    - text
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+  layout_builder:
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          89896b3f-7bff-4562-a3e1-8123023c062e:
+            uuid: 89896b3f-7bff-4562-a3e1-8123023c062e
+            region: content
+            configuration:
+              id: 'field_block:paragraph:text_image:field_text_demo'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          8c09e29e-a9c5-4057-8f88-c04c5a81c1d8:
+            uuid: 8c09e29e-a9c5-4057-8f88-c04c5a81c1d8
+            region: content
+            configuration:
+              id: 'field_block:paragraph:text_image:field_image_demo'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+_core:
+  default_config_hash: GVCU1OMBWMYorodU_tnOIc-IuwX3kWOtK4H7OnjAX94
+id: paragraph.text_image.default
+targetEntityType: paragraph
+bundle: text_image
+mode: default
+content:
+  field_image_demo:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_text_demo:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  search_api_excerpt: true
+  uid: true
