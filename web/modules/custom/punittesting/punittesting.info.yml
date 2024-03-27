@@ -1,0 +1,5 @@
+name: 'PUnitTesting'
+type: module
+description: 'A module for all php unit testing lessons'
+package: Custom
+core_version_requirement: ^10
